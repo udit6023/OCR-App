@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94000000"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_above="@+id/linear_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/text_data"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="Hello capture or chooose an image from the gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_capture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:foregroundTint="#AC1D1D"
+            android:text="Capture"
+            android:textColorHighlight="#A53131"
+            android:textColorHint="#972222"
+            android:textColorLink="#AE1B1B"></Button>
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Copy Text"
+            android:visibility="gone">
+
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
